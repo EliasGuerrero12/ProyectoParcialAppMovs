@@ -5,6 +5,9 @@
         public AppShell()
         {
             InitializeComponent();
+
+            Routing.RegisterRoute("biografia", typeof(BiografiaPage));
+            Routing.RegisterRoute("discografia", typeof(DiscografiaPage));
         }
     }
 }

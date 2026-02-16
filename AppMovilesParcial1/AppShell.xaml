@@ -7,8 +7,7 @@
     Title="AppMovilesParcial1">
 
     <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+        Title="Pagina MILO J"
+        ContentTemplate="{DataTemplate local:MainPage}" />
 
 </Shell>
