@@ -24,13 +24,13 @@
                     FontSize="25"
                     FontFamily="Roblox"
                     BackgroundColor="#4393c4"
-                    Clicked="OnBiografiaClicked"/>
+                    />
 
             <Button Text="DISCOGRAFIA"
                     FontSize="25"
                     FontFamily="Roblox"
                     BackgroundColor="#4393c4"
-                    Clicked="OnDiscografiaClicked"/>
+                    />
 
         </VerticalStackLayout>
     </Grid>
