@@ -68,6 +68,12 @@
 	  <MauiXaml Update="Pages\AlbumDetail.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Pages\ConcertDetail.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Pages\Concerts.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Pages\Discografia.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
