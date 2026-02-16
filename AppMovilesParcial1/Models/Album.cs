@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace AppMovilesParcial1.Models
 {
-    internal class Album
+    public class Album
     {
+        public string Name { get; set; } = string.Empty;
+        public string Year { get; set; } = string.Empty;
+        public string Image { get; set; } = string.Empty;
+        public string Description { get; set; } = string.Empty;
     }
+
 }
