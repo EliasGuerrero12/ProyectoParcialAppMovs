@@ -5,6 +5,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:AppMovilesParcial1"
     xmlns:pages="clr-namespace:AppMovilesParcial1.Pages"
+    Shell.FlyoutBehavior="Flyout"
     
 
     Title="AppMovilesParcial1">

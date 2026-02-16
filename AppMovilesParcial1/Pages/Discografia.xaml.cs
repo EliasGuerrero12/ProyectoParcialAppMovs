@@ -9,7 +9,7 @@ public partial class Discografia: ContentPage
         new Album {
             Name="AM",
             Year="2013",
-            Image="am.jpg",
+            Image="lavida.png",
             Description="ishduiwuid"
         },
 

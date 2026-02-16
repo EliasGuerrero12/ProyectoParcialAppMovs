@@ -6,7 +6,7 @@
 
     <VerticalStackLayout Padding="20" Spacing="15">
 
-        <Image x:Name="AlbumImage" HeightRequest="200" Aspect="AspectFill" />
+        <Image x:Name="AlbumImage" HeightRequest="200" Aspect="AspectFit" />
 
         <Label x:Name="AlbumTitle" FontSize="24" FontAttributes="Bold" />
 
