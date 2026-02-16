@@ -3,19 +3,55 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppMovilesParcial1.BiografiaPage"
              Title="BiografiaPage">
-    <ScrollView>
+
+    <Grid>
+        <Image Source="miloj4.jpg"
+           Aspect="AspectFill" />
         <VerticalStackLayout Padding="20" Spacing="15">
 
-            <Label 
+        <Label 
             Text="Biografía"
-            FontSize="24"
+            HorizontalOptions="Center"
+            TextColor="#de1d1d"
+            FontSize="50"
+            FontFamily="SuperPopstar"/>
+
+        <Label 
+            Text="Camilo Joaquín Villarruel nació el 25 de octubre de 2006 en la ciudad de Morón, en la provincia de Buenos Aires. Es el tercer hijo del matrimonio conformado por Walter Villarruel y Aldana Celeste Ríos. Tiene dos hermanas mayores, Ángeles y Alma, y un hermano menor, Santino.
+                  
+            Su interés por la música despertó entre los 8 y 9 años, inspirado por una de sus hermanas, Juntos escribían canciones y participaban en competencias de freestyle. A los 11 años, llegó incluso a aparecer en un video en el El Quinto Escalón, Además de la música, también sintió una fuerte atracción por el fútbol, deporte que practica desde pequeño y por el que siente una profunda pasión. Es fanático del Club Deportivo Morón, al que actualmente apoya como patrocinador, y llegó a integrar las divisiones inferiores del Sacachispas Fútbol Club. Su nombre artístico surge de la combinación del hipocorístico de Camilo y la inicial de Joaquín, como él mismo ha explicado en distintas entrevistas.
+                  
+            
+            
+            
+            
+            
+            
+            
+            En 2021, Milo J conoció a su crew BajoWest, quienes se convertirían en una parte fundamental de su carrera, ya que gracias a ellos comenzó a grabar y publicar sus primeras canciones en su canal de YouTube, entre ellas “Tus vueltas”, “Cuando estás vos” y “Tu paz”, El 16 de agosto de 2022, lanzó el tema que marcaría un antes y un después en su trayectoria artística, titulado “Milagrosa”. La canción se viralizó rápidamente en plataformas como YouTube y TikTok, convirtiéndose en una de las más populares en esta última durante ese año. Posteriormente, Milo J continuó publicando música a lo largo del año, con temas como “Al sol”, “Vudú” y “Sessions 02”, en colaboración con el productor argentino Indica Miki.
+                  
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            En noviembre del mismo año, llegaron sus primeras colaboraciones con otros artistas. La más destacada fue “El Bolero”, junto a Yami Safdie, lanzada el 16 de noviembre, que alcanzó 15 millones de reproducciones en YouTube en tan solo ocho meses. Poco después, el 27 de noviembre, presentó “Valores del west”, una colaboración con su compañero Foco Foking."
+            HorizontalOptions="Center"
+            FontSize="17"
+            TextColor="White"
             FontAttributes="Bold"/>
 
-            <Label 
-            Text="Milo J es un artista argentino nacido en 2006. Se hizo conocido por su estilo único dentro del rap y el trap latino. Su música combina letras profundas con sonidos modernos. En poco tiempo logró posicionarse como uno de los jóvenes más influyentes en la escena urbana. Ha colaborado con artistas importantes y sus canciones han acumulado millones de reproducciones. 
-                 Su carrera continúa creciendo rápidamente dentro de la música urbana."
-            FontSize="16"/>
-
         </VerticalStackLayout>
-    </ScrollView>
+    </Grid>
 </ContentPage>

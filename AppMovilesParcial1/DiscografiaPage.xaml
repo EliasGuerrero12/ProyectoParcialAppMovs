@@ -4,14 +4,15 @@
              x:Class="AppMovilesParcial1.DiscografiaPage"
              Title="DiscografiaPage">
     <Grid>
-        <Image Source="miloj.jpg"
+        <Image Source="miloj3.jpg"
            Aspect="AspectFill" />
         <VerticalStackLayout Padding="20" Spacing="15">
 
         <Label 
         Text="DISCOGRAFIA"
         HorizontalOptions="Center"
-        FontSize="24"
+        FontSize="50"
+        FontFamily="SuperPopstar"
         FontAttributes="Bold"/>
 
         <ListView x:Name="AlbumList">

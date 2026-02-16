@@ -13,6 +13,8 @@ namespace AppMovilesParcial1
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+                    fonts.AddFont("RobloxFont-Regilar.tff", "Roblox");
+                    fonts.AddFont("Super Popstar.ttf", "SuperPopstar");
                 });
 
 #if DEBUG

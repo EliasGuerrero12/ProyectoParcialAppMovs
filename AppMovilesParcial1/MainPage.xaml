@@ -8,22 +8,28 @@
                Aspect="AspectFill" />
 
         <Label Text="MILO J"
-                   FontSize="40"
-                   TextColor="Black"
+                   FontSize="80"
+                   FontFamily="SuperPopstar"
+                   TextColor="Beige"
                    HorizontalOptions="Center"
-                   VerticalOptions="Start"
+                   VerticalOptions="Center"
                    FontAttributes="Bold"/>
+        
         <VerticalStackLayout
                    Padding="30"
                    Spacing="20"
-                   VerticalOptions="Center">
+                   VerticalOptions="End">
 
             <Button Text="BIOGRAFIA"
-                    BackgroundColor="Beige"
+                    FontSize="25"
+                    FontFamily="Roblox"
+                    BackgroundColor="#4393c4"
                     Clicked="OnBiografiaClicked"/>
 
             <Button Text="DISCOGRAFIA"
-                    BackgroundColor="Beige"
+                    FontSize="25"
+                    FontFamily="Roblox"
+                    BackgroundColor="#4393c4"
                     Clicked="OnDiscografiaClicked"/>
 
         </VerticalStackLayout>
