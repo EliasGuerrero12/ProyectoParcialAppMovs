@@ -14,25 +14,6 @@
                    HorizontalOptions="Center"
                    VerticalOptions="Center"
                    FontAttributes="Bold"/>
-        
-        <VerticalStackLayout
-                   Padding="30"
-                   Spacing="20"
-                   VerticalOptions="End">
-
-            <Button Text="BIOGRAFIA"
-                    FontSize="25"
-                    FontFamily="Roblox"
-                    BackgroundColor="#4393c4"
-                    Clicked="OnBiografiaClicked"/>
-
-            <Button Text="DISCOGRAFIA"
-                    FontSize="25"
-                    FontFamily="Roblox"
-                    BackgroundColor="#4393c4"
-                    Clicked="OnDiscografiaClicked"/>
-
-        </VerticalStackLayout>
     </Grid>
 
 </ContentPage>

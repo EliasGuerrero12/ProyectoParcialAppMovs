@@ -16,29 +16,13 @@
         FontAttributes="Bold"
         TextColor="#941f1f"/>
 
-        </VerticalStackLayout>
-
-        <VerticalStackLayout Padding="20" Spacing="15">
-
-                <Button Text="La vida era mas corta (2025)"
-                Clicked="OnAlbumLaVidaClicked"/>
-            <VerticalStackLayout x:Name="CancionesLaVida"
-                             IsVisible="False"
-                             Margin="20,0,0,0"
-                             Spacing="5">
-                <Label Text="• Bajo de la piel"/>
-                <Label Text="• Niño"/>
-                <Label Text="• Gil (ft. Trueno)"/>
-                <Label Text="• Ama de mi sol"/>
-                <Label Text="• Solifican12"/>
-                <Label Text="• Lucia (ft. Soledad)"/>
-                <Label Text="• MmmM (ft. Paula Prieto)"/>
-                <Label Text="• Llora Llora (ft. AKRILA)"/>
-                <Label Text="• Recordé"/>
-                <Label Text="• Cuando el agua hirviendo"/>
-                <Label Text="• La vida era más corta"/>
-
-            </VerticalStackLayout>
+            <ListView x:Name="ListaAlbumes">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding}" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </VerticalStackLayout>
     </Grid>
 </ContentPage>

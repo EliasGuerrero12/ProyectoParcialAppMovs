@@ -6,8 +6,19 @@
     xmlns:local="clr-namespace:AppMovilesParcial1"
     Title="AppMovilesParcial1">
 
-    <ShellContent
-        Title="Pagina MILO J"
-        ContentTemplate="{DataTemplate local:MainPage}" />
+    <FlyoutItem Title="Inicio">
+        <ShellContent
+            ContentTemplate="{DataTemplate local:MainPage}" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Biografía">
+        <ShellContent
+            ContentTemplate="{DataTemplate local:BiografiaPage}" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Discografía">
+        <ShellContent
+            ContentTemplate="{DataTemplate local:DiscografiaPage}" />
+    </FlyoutItem>
 
 </Shell>
