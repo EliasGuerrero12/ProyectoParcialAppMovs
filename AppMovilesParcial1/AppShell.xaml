@@ -10,8 +10,8 @@
 
     <ShellContent
     Title="Test"
-    ContentTemplate="{DataTemplate pages:AlbumDetail}"
-    Route="AlbumDetail" />
+    ContentTemplate="{DataTemplate pages:Discografia}"
+    Route="Discografia" />
 
 
 </Shell>
