@@ -8,7 +8,7 @@ public partial class AlbumDetail : ContentPage
     {
         InitializeComponent();
 
-        // Llenar controles con el modelo
+     
         AlbumImage.Source = album.Image;
         AlbumTitle.Text = album.Name;
         AlbumArtist.Text = "Álbum";
