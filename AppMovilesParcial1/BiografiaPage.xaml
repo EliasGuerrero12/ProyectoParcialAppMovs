@@ -12,7 +12,7 @@
         <Label 
             Text="Biografía"
             HorizontalOptions="Center"
-            TextColor="#de1d1d"
+            TextColor="#a38d5d"
             FontSize="50"
             FontFamily="SuperPopstar"/>
 
