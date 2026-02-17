@@ -8,35 +8,21 @@
     Shell.FlyoutBehavior="Flyout"
     Title="AppMovilesParcial1">
 
-    <FlyoutItem Title="Home" >
+    
+    
+
+    <FlyoutItem Title="Discografia" >
         <ShellContent
-    Title="Home"
-    ContentTemplate="{DataTemplate pages:MainPage}"/>
+    Title="Discografia"
+    ContentTemplate="{DataTemplate pages:Discografia}"/>
     </FlyoutItem>
 
-    <FlyoutItem Title="Biografia" >
+    <FlyoutItem Title="Conciertos y Giras" >
         <ShellContent
-    Title="Biografia"
-    ContentTemplate="{DataTemplate pages:}"/>
+    Title="Conciertos"
+    ContentTemplate="{DataTemplate pages:Concerts}"/>
     </FlyoutItem>
 
-    <FlyoutItem Title="Home" >
-        <ShellContent
-    Title="Home"
-    ContentTemplate="{DataTemplate pages:MainPage}"/>
-    </FlyoutItem>
-
-    <FlyoutItem Title="Home" >
-        <ShellContent
-    Title="Home"
-    ContentTemplate="{DataTemplate pages:MainPage}"/>
-    </FlyoutItem>
-
-    <FlyoutItem Title="Home" >
-        <ShellContent
-    Title="Home"
-    ContentTemplate="{DataTemplate pages:MainPage}"/>
-    </FlyoutItem>
 
     
 

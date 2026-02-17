@@ -10,7 +10,7 @@
 
             <Image x:Name="ConcertImage"
                    HeightRequest="200"
-                   Aspect="AspectFill"/>
+                   Aspect="AspectFit"/>
 
             <Label x:Name="ConcertTitle"
                    FontSize="24"
