@@ -5,35 +5,34 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:AppMovilesParcial1"
     xmlns:pages="clr-namespace:AppMovilesParcial1.Pages"
-    xmlns:local="clr-namespace:AppMovilesParcial1.Styles"
     Shell.FlyoutBehavior="Flyout"
     Title="AppMovilesParcial1">
 
-    <FlyoutItem Title="Home" Icon="home.png">
+    <FlyoutItem Title="Home" >
         <ShellContent
     Title="Home"
     ContentTemplate="{DataTemplate pages:MainPage}"/>
     </FlyoutItem>
 
-    <FlyoutItem Title="Biografia" Icon="">
+    <FlyoutItem Title="Biografia" >
+        <ShellContent
+    Title="Biografia"
+    ContentTemplate="{DataTemplate pages:}"/>
+    </FlyoutItem>
+
+    <FlyoutItem Title="Home" >
         <ShellContent
     Title="Home"
     ContentTemplate="{DataTemplate pages:MainPage}"/>
     </FlyoutItem>
 
-    <FlyoutItem Title="Home" Icon="home.png">
+    <FlyoutItem Title="Home" >
         <ShellContent
     Title="Home"
     ContentTemplate="{DataTemplate pages:MainPage}"/>
     </FlyoutItem>
 
-    <FlyoutItem Title="Home" Icon="home.png">
-        <ShellContent
-    Title="Home"
-    ContentTemplate="{DataTemplate pages:MainPage}"/>
-    </FlyoutItem>
-
-    <FlyoutItem Title="Home" Icon="home.png">
+    <FlyoutItem Title="Home" >
         <ShellContent
     Title="Home"
     ContentTemplate="{DataTemplate pages:MainPage}"/>
