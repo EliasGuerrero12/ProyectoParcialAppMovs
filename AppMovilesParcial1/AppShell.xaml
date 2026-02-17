@@ -4,11 +4,26 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:AppMovilesParcial1"
+    xmlns:pages="clr-namespace:AppMovilesParcial1.Pages"
+    Shell.FlyoutBehavior="Flyout"
     Title="AppMovilesParcial1">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    
+    
+
+    <FlyoutItem Title="Discografia" >
+        <ShellContent
+    Title="Discografia"
+    ContentTemplate="{DataTemplate pages:Discografia}"/>
+    </FlyoutItem>
+
+    <FlyoutItem Title="Conciertos y Giras" >
+        <ShellContent
+    Title="Conciertos"
+    ContentTemplate="{DataTemplate pages:Concerts}"/>
+    </FlyoutItem>
+
+
+    
 
 </Shell>
