@@ -8,8 +8,9 @@
     <VerticalStackLayout Padding="10">
 
         <Label
-            Text="Conciertos y Giras"
-            FontSize="22"
+            Text="CONCIERTOS Y GIRAS"
+            FontSize="50"
+            FontFamily="SuperPopstar"
             FontAttributes="Bold"
             HorizontalOptions="Center"/>
 

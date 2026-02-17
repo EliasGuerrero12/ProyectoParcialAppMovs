@@ -18,7 +18,7 @@
                 FontSize="50"
                 FontFamily="SuperPopstar"
                 FontAttributes="Bold"
-                TextColor="#941f1f"/>
+                TextColor="White"/>
 
             
             <ListView x:Name="albumsListView"

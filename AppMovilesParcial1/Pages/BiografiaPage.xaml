@@ -2,62 +2,94 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppMovilesParcial1.Pages.BiografiaPage"
-             Title="BiografiaPage">
+             Title="Biografía">
 
-    <Grid>
-        <Image Source="miloj4.jpg"
-           Aspect="AspectFill" />
-        <VerticalStackLayout Padding="20" Spacing="15">
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="30">
 
-        <Label 
-            Text="Biografía"
-            HorizontalOptions="Center"
-            TextColor="#a38d5d"
-            FontSize="50"
-            FontFamily="SuperPopstar"/>
+            <Label Text="Biografía"
+                   HorizontalOptions="Center"
+                   TextColor="White"
+                   FontSize="50"
+                   FontFamily="SuperPopstar"/>
 
-        <Label 
-            Text="Camilo Joaquín Villarruel nació el 25 de octubre de 2006 en la ciudad de Morón, en la provincia de Buenos Aires. Es el tercer hijo del matrimonio conformado por Walter Villarruel y Aldana Celeste Ríos. Tiene dos hermanas mayores, Ángeles y Alma, y un hermano menor, Santino, Su interés por la música despertó entre los 8 y 9 años, inspirado por una de sus hermanas, Juntos escribían canciones y participaban en competencias de freestyle. A los 11 años, llegó incluso a aparecer en un video en el El Quinto Escalón, Además de la música, también sintió una fuerte atracción por el fútbol, deporte que practica desde pequeño y por el que siente una profunda pasión. Es fanático del Club Deportivo Morón, al que actualmente apoya como patrocinador, y llegó a integrar las divisiones inferiores del Sacachispas Fútbol Club. Su nombre artístico surge de la combinación del hipocorístico de Camilo y la inicial de Joaquín, como él mismo ha explicado en distintas entrevistas.
-                  
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            En 2021, Milo J conoció a su crew BajoWest, quienes se convertirían en una parte fundamental de su carrera, ya que gracias a ellos comenzó a grabar y publicar sus primeras canciones en su canal de YouTube, entre ellas “Tus vueltas”, “Cuando estás vos” y “Tu paz”, El 16 de agosto de 2022, lanzó el tema que marcaría un antes y un después en su trayectoria artística, titulado “Milagrosa”. La canción se viralizó rápidamente en plataformas como YouTube y TikTok, convirtiéndose en una de las más populares en esta última durante ese año. Posteriormente, Milo J continuó publicando música a lo largo del año, con temas como “Al sol”, “Vudú” y “Sessions 02”, en colaboración con el productor argentino Indica Miki.
-                  
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            En noviembre del mismo año, llegaron sus primeras colaboraciones con otros artistas. La más destacada fue “El Bolero”, junto a Yami Safdie, lanzada el 16 de noviembre, que alcanzó 15 millones de reproducciones en YouTube en tan solo ocho meses. Poco después, el 27 de noviembre, presentó “Valores del west”, una colaboración con su compañero Foco Foking."
-            HorizontalOptions="Center"
-            FontSize="17"
-            TextColor="White"
-            FontAttributes="Bold"/>
+            <Grid ColumnDefinitions="100,*"
+                  ColumnSpacing="40">
+
+                <Image Source="miloj4.jpg"
+                       WidthRequest="150"
+                       HeightRequest="200"
+                       Aspect="AspectFill"
+                       Grid.Column="0"/>
+
+                <Label Grid.Column="1"
+                       FontSize="20"
+                       TextColor="White"
+                       LineBreakMode="WordWrap"
+                       Text="Camilo Joaquín Villarruel nació el 25 de octubre de 2006 en Morón, Buenos Aires. Es el tercer hijo de Walter Villarruel y Aldana Celeste Ríos. Desde pequeño mostró interés por la música, inspirado por su hermana, con quien escribía canciones y participaba en competencias de freestyle.
+                       
+                       
+                       
+                       
+                       
+                       
+                       
+                       
+                       
+                       A los 11 años apareció en El Quinto Escalón. Además de la música, siempre tuvo una fuerte pasión por el fútbol. Es fanático del Club Deportivo Morón y formó parte de las divisiones inferiores de Sacachispas Fútbol Club. Su nombre artístico combina el hipocorístico de Camilo y la inicial de Joaquín.
+                       
+                       
+                       
+                       
+                       
+                       
+                       
+                       En 2021 conoció a su crew BajoWest, quienes impulsaron su carrera musical. En 2022 lanzó 'Milagrosa', canción que se viralizó en YouTube y TikTok."/>
+            </Grid>
+
+            <Label FontSize="20"
+                   TextColor="White"
+                   LineBreakMode="WordWrap"
+                   Text="Posteriormente colaboró con artistas como Yami Safdie y continuó consolidándose como una de las voces emergentes más importantes del género urbano.
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                   En noviembre del mismo año, llegaron sus primeras colaboraciones con otros artistas. La más destacada fue “El Bolero”, junto a Yami Safdie, lanzada el 16 de noviembre, que alcanzó 15 millones de reproducciones en YouTube en tan solo ocho meses."/>
+
+            <Grid ColumnDefinitions="*,120"
+                  ColumnSpacing="15">
+
+                <Label Grid.Column="0"
+                       FontSize="20"
+                       TextColor="White"
+                       LineBreakMode="WordWrap"
+                       Text="Poco después, el 27 de noviembre, presentó “Valores del west”, una colaboración con su compañero Foco Foking.
+                       
+                       
+                       
+                       
+                       
+                       
+                       
+                       El 27 de noviembre de 2023, Milo J reveló los temas de su álbum de estudio debut 111 en una publicación de Instagram, confirmando colaboraciones con Yami Safdie, Yahritza y su Esencia, Peso Pluma y Nicki Nicole, estrenándose en su canal de YouTube tres días después con nueve canciones."/>
+
+                <Image Source="miloj5.jpg"
+                       WidthRequest="120"
+                       HeightRequest="200"
+                       Aspect="AspectFill"
+                       Grid.Column="1"/>
+            </Grid>
 
         </VerticalStackLayout>
-    </Grid>
+    </ScrollView>
+
 </ContentPage>
