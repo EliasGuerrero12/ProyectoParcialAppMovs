@@ -21,4 +21,9 @@
             ContentTemplate="{DataTemplate local:DiscografiaPage}" />
     </FlyoutItem>
 
+    <FlyoutItem Title="Conciertos">
+        <ShellContent
+         ContentTemplate="{DataTemplate local:Concerts}" />
+    </FlyoutItem>
+
 </Shell>
