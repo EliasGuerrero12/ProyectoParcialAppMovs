@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="AppMovilesParcial1.Pages.Concerts"
+    Title="Giras">
+
+    <VerticalStackLayout Padding="10">
+
+        <Label
+            Text="Conciertos y Giras"
+            FontSize="22"
+            FontAttributes="Bold"
+            HorizontalOptions="Center"/>
+
+        <ListView x:Name="concertsListView"
+                  ItemSelected="OnConcertSelected">
+
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell
+                        Text="{Binding NameConcert}"
+                        Detail="{Binding Date}" />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+
+        </ListView>
+
+    </VerticalStackLayout>
+</ContentPage>
