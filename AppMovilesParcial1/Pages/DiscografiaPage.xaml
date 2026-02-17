@@ -5,14 +5,13 @@
              Title="Discografia">
 
     <Grid>
-        <!-- Fondo de imagen -->
+       
         <Image Source="miloj3.jpg"
                Aspect="AspectFill" />
 
-        <!-- Contenido principal -->
         <VerticalStackLayout Padding="20" Spacing="15">
 
-            <!-- Título -->
+           
             <Label 
                 Text="DISCOGRAFIA"
                 HorizontalOptions="Center"
@@ -21,7 +20,7 @@
                 FontAttributes="Bold"
                 TextColor="#941f1f"/>
 
-            <!-- ListView con tu estructura de datos -->
+            
             <ListView x:Name="albumsListView"
                       ItemSelected="OnAlbumSelected"
                       BackgroundColor="Transparent"
