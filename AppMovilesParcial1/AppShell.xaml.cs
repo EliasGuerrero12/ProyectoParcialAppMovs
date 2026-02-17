@@ -1,10 +1,15 @@
-﻿namespace AppMovilesParcial1
+﻿
+using AppMovilesParcial1.Pages;
+namespace AppMovilesParcial1;
+
+
+public partial class AppShell : Shell
 {
-    public partial class AppShell : Shell
+    public AppShell()
     {
-        public AppShell()
-        {
-            InitializeComponent();
-        }
+        InitializeComponent();
+
+        Routing.RegisterRoute("biografia", typeof(BiografiaPage));
+        Routing.RegisterRoute("discografia", typeof(DiscografiaPage));
     }
 }

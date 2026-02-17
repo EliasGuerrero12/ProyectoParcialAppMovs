@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
 		<TargetFrameworks>net9.0-android;net9.0-ios;net9.0-maccatalyst</TargetFrameworks>
@@ -60,11 +60,11 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Compile Remove="Resources\Fonts\IconFont.cs" />
+	  <MauiImage Remove="Resources\Images\miloj2.jpg" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiFont Include="Resources\Styles\IconFont.cs" />
+	  <None Remove="Resources\Images\miloj2.jpg" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -73,18 +73,16 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="Pages\AlbumDetail.xaml">
+	  <MauiXaml Update="Pages\BiografiaPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Pages\ConcertDetail.xaml">
+	  <MauiXaml Update="Pages\DiscografiaPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Pages\Concerts.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Pages\Discografia.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Models\" />
 	</ItemGroup>
 
 </Project>

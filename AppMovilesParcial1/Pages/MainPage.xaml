@@ -8,31 +8,12 @@
                Aspect="AspectFill" />
 
         <Label Text="MILO J"
-                   FontSize="80"
+                   FontSize="85"
                    FontFamily="SuperPopstar"
                    TextColor="Beige"
                    HorizontalOptions="Center"
                    VerticalOptions="Center"
                    FontAttributes="Bold"/>
-
-        <VerticalStackLayout
-                   Padding="30"
-                   Spacing="20"
-                   VerticalOptions="End">
-
-            <Button Text="BIOGRAFIA"
-                    FontSize="25"
-                    FontFamily="Roblox"
-                    BackgroundColor="#4393c4"
-                    />
-
-            <Button Text="DISCOGRAFIA"
-                    FontSize="25"
-                    FontFamily="Roblox"
-                    BackgroundColor="#4393c4"
-                    />
-
-        </VerticalStackLayout>
     </Grid>
 
 </ContentPage>
