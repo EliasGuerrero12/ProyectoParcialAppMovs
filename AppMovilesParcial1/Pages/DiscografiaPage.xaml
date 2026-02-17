@@ -2,26 +2,40 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppMovilesParcial1.Pages.DiscografiaPage"
-             Title="DiscografiaPage">
+             Title="Discografia">
+
     <Grid>
+        <!-- Fondo de imagen -->
         <Image Source="miloj3.jpg"
-           Aspect="AspectFill" />
+               Aspect="AspectFill" />
+
+        <!-- Contenido principal -->
         <VerticalStackLayout Padding="20" Spacing="15">
 
+            <!-- Título -->
             <Label 
-        Text="DISCOGRAFIA"
-        HorizontalOptions="Center"
-        FontSize="50"
-        FontFamily="SuperPopstar"
-        FontAttributes="Bold"
-        TextColor="#941f1f"/>
+                Text="DISCOGRAFIA"
+                HorizontalOptions="Center"
+                FontSize="50"
+                FontFamily="SuperPopstar"
+                FontAttributes="Bold"
+                TextColor="#941f1f"/>
 
-            <ListView x:Name="ListaAlbumes">
+            <!-- ListView con tu estructura de datos -->
+            <ListView x:Name="albumsListView"
+                      ItemSelected="OnAlbumSelected"
+                      BackgroundColor="Transparent"
+                      SeparatorColor="#941f1f">
+
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <TextCell Text="{Binding}" />
+                        <TextCell Text="{Binding Name}"
+                                  Detail="{Binding Year}"
+                                  TextColor="White"
+                                  DetailColor="#941f1f" />
                     </DataTemplate>
                 </ListView.ItemTemplate>
+
             </ListView>
         </VerticalStackLayout>
     </Grid>
