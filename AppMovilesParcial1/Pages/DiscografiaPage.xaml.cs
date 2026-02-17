@@ -1,4 +1,4 @@
-namespace AppMovilesParcial1;
+namespace AppMovilesParcial1.Pages;
 
 public partial class DiscografiaPage : ContentPage
 {
@@ -18,3 +18,5 @@ public partial class DiscografiaPage : ContentPage
         ListaAlbumes.ItemsSource = albumes;
     }
 }
+
+

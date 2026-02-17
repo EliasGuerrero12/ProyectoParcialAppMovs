@@ -73,10 +73,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="BiografiaPage.xaml">
+	  <MauiXaml Update="Pages\BiografiaPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="DiscografiaPage.xaml">
+	  <MauiXaml Update="Pages\DiscografiaPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>
