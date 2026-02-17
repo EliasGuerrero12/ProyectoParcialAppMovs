@@ -8,7 +8,7 @@
                Aspect="AspectFill" />
 
         <Label Text="MILO J"
-                   FontSize="80"
+                   FontSize="85"
                    FontFamily="SuperPopstar"
                    TextColor="Beige"
                    HorizontalOptions="Center"
