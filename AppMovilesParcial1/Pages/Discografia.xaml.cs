@@ -10,7 +10,7 @@ public partial class Discografia: ContentPage
             Name="La Vida Era Más Corta",
             Year="2025",
             Image="lavida.png",
-            Description="Su tercer álbum de estudio, donde realiza un giro hacia el folklore y las raíces argentinas, fusionándolo con el trap. Incluye colaboraciones con leyendas como Mercedes Sosa (de manera póstuma), Silvio Rodríguez, Soledad y Trueno"
+            Description="Su tercer álbum de estudio, donde realiza un giro hacia el folklore y las raíces argentinas, fusionándolo con el trap. Incluye colaboraciones con leyendas como Mercedes Sosa (de manera póstuma), Silvio Rodríguez, Soledad y Trueno."
         },
 
         new Album {
@@ -30,7 +30,7 @@ public partial class Discografia: ContentPage
             Name="En dormir sin Madrid",
             Year="2023",
             Image="madrid.png",
-            Description="Un EP colaborativo con el reconocido productor Bizarrap. Incluye la exitosa \"Milo J: BZRP Music Sessions, Vol. 57\" y otras cuatro canciones que consolidaron su salto a la fama internacional"
+            Description="Un EP colaborativo con el reconocido productor Bizarrap. Incluye la exitosa \"Milo J: BZRP Music Sessions, Vol. 57\" y otras cuatro canciones que consolidaron su salto a la fama internacional."
         }
     ];
 

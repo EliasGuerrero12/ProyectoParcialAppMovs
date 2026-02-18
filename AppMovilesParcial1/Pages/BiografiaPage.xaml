@@ -4,7 +4,18 @@
              x:Class="AppMovilesParcial1.Pages.BiografiaPage"
              Title="Biografía">
 
-    <ScrollView>
+    <Grid>
+        <Image Source="miloj.jpg" 
+               Aspect="AspectFill"
+               Opacity="0.25"/>
+
+       
+        <BoxView Color="Black" 
+                 Opacity="0.3"/>
+
+
+
+        <ScrollView>
         <VerticalStackLayout Padding="20" Spacing="30">
 
             <Label Text="Biografía"
@@ -15,6 +26,7 @@
 
             <Grid ColumnDefinitions="100,*"
                   ColumnSpacing="40">
+               
 
                 <Image Source="miloj4.jpg"
                        WidthRequest="150"
@@ -91,5 +103,5 @@
 
         </VerticalStackLayout>
     </ScrollView>
-
+    </Grid>
 </ContentPage>
