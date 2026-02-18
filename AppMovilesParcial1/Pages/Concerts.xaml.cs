@@ -9,7 +9,7 @@ public partial class Concerts : ContentPage
             NameConcert="Gira España 2023",
             Date="29 de junio de 2023",
             Place="Sala Apolo, Barcelona, España",
-            Description="Concierto en el marco de su primera gira por España ",
+            Description="Concierto en el marco de su primera gira por España. ",
             Image="apolo.jpg"
         },
 
@@ -25,7 +25,7 @@ public partial class Concerts : ContentPage
             NameConcert="Gira España 2025",
             Date="Enero de 2025",
             Place="\tPalau Sant Jordi (Barcelona) y Palacio de los Deportes (Madrid), España",
-            Description="Gira por España presentando su álbum 166, con entradas agotadas en fechas emblemáticas",
+            Description="Gira por España presentando su álbum 166, con entradas agotadas en fechas emblemáticas.",
             Image="espa.jpg"
         },
          
