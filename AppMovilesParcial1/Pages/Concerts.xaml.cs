@@ -3,6 +3,8 @@ namespace AppMovilesParcial1.Pages;
 
 public partial class Concerts : ContentPage
 {
+
+    //lista de conciertos predefinida, cada concierto tiene un nombre, fecha, lugar, descripción e imagen asociada.
     private List<Concert> _concerts =
     [
         new Concert{
@@ -37,6 +39,7 @@ public partial class Concerts : ContentPage
         concertsListView.ItemsSource = _concerts;
     }
 
+    //async para manejar la selección de un concierto en la lista, navega a la página de detalle del concierto seleccionado.
     private async void OnConcertSelected(object sender, SelectedItemChangedEventArgs e)
     {
         if (e.SelectedItem is Concert selectedConcert)
