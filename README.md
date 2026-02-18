@@ -32,6 +32,4 @@ Navegar a la carpeta clonada y seleccionar AppMovilesParcial1.sln
 
 Presionar F5 o el botón "Play" para compilar y ejecutar
 
-Ejecutar la aplicación
 
-Presionar F5 o el botón "Play" para compilar y ejecutar
