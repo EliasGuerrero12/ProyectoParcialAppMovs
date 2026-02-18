@@ -4,6 +4,7 @@
              x:Class="AppMovilesParcial1.Pages.DiscografiaPage"
              Title="Discografia">
 
+    <!--diseño para mostrar la discografía de Milo J, con un fondo que combina una imagen para crear un efecto visual atractivo. El contenido principal se organiza en un ListView para mostrar los álbumes, con texto formateado para mejorar la presentación.-->
     <Grid>
        
         <Image Source="miloj3.jpg"

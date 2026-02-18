@@ -3,6 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppMovilesParcial1.Pages.MainPage"
              Shell.NavBarIsVisible="False">
+
+    <!--mainpage con un diseño sencillo pero impactante, utilizando una imagen de fondo que ocupa toda la pantalla y un título centrado con una fuente llamativa para destacar el nombre del artista. El diseño es minimalista, enfocándose en la imagen y el texto para crear una primera impresión fuerte y atractiva para los usuarios al ingresar a la aplicación.-->
     <Grid>
         <Image Source="miloj.jpg"
                Aspect="AspectFill" />

@@ -6,6 +6,7 @@ public partial class AlbumDetail : ContentPage
 {
     private Album _album;
 
+    //Detalle del album , muestra la información del álbum seleccionado en la página anterior.
     public AlbumDetail(Album album)
     {
         InitializeComponent();

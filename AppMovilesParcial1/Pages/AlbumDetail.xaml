@@ -4,6 +4,8 @@
              x:Class="AppMovilesParcial1.Pages.AlbumDetail"
              Title="AlbumDetail">
 
+    <!--Diseño para mostrar los detalles de un álbum seleccionado, incluyendo su imagen, título, artista, 
+    fecha de lanzamiento y descripción. El fondo tiene una imagen con opacidad para crear un efecto visual atractivo.-->
     <Grid>
 
         <Image Source="miloj.jpg" 

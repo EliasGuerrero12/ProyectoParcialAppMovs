@@ -5,6 +5,7 @@ public partial class ConcertDetail : ContentPage
 {
     private Concert _concert;
 
+    //clase para mostrar el detalle del concierto seleccionado en la página anterior, muestra la información del concierto seleccionado en la página anterior.
     public ConcertDetail(Concert concert)
     {
         InitializeComponent();

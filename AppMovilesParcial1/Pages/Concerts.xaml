@@ -5,6 +5,8 @@
     x:Class="AppMovilesParcial1.Pages.Concerts"
     Title="Giras">
 
+    <!--diseño para mostrar los conciertos de manera detallada con un fondo que combina una imagen y un BoxView para crear un efecto visual atractivo. 
+    utilizando listview para mostrar la lista de conciertos, con imágenes y texto formateado para mejorar la presentación.-->
     <Grid>
           <Image Source="miloconce.jpg"
                Aspect="AspectFill"

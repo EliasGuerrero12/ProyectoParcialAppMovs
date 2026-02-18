@@ -4,6 +4,8 @@
              x:Class="AppMovilesParcial1.Pages.BiografiaPage"
              Title="Biografía">
 
+    <!--diseño para la biografía de Milo J, con un fondo que combina una imagen y un BoxView para crear un efecto visual atractivo. El contenido principal 
+    se organiza en un ScrollView para permitir la lectura de la biografía completa, con imágenes y texto formateado para mejorar la presentación.-->
     <Grid>
         <Image Source="miloj.jpg" 
                Aspect="AspectFill"

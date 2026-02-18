@@ -6,6 +6,7 @@ public partial class Discografia: ContentPage
 {
     private List<Album> _albums =
     [
+        //lista predefinida de álbumes de Milo J, cada álbum tiene un nombre, año de lanzamiento, imagen y descripción asociada.
         new Album {
             Name="La Vida Era Más Corta",
             Year="2025",
@@ -40,6 +41,7 @@ public partial class Discografia: ContentPage
         albumsListView.ItemsSource = _albums;
     }
 
+    //async para manejar la selección de un álbum en la lista, navega a la página de detalle del álbum seleccionado.
     private async void OnAlbumSelected(object sender, SelectedItemChangedEventArgs e)
     {
         if (e.SelectedItem is Album selectedAlbum)

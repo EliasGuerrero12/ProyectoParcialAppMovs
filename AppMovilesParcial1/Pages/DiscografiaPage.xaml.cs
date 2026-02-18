@@ -6,6 +6,8 @@ public partial class DiscografiaPage : ContentPage
 {
     private List<Album> _albums =
     [
+        
+        //lista predefinida de álbumes de Milo J, cada álbum tiene un nombre, año de lanzamiento, imagen y descripción asociada.
         new Album {
             Name="La Vida Era Más Corta",
             Year="2025",
