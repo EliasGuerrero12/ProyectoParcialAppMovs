@@ -1,12 +1,12 @@
-<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AppMovilesParcial1.Pages.Concerts"
-             Title="Giras">
+             x:Class="AppMovilesParcial1.Pages.Concerts">
 
     <Grid>
 
-        <Image Source="miloconce.jpg" Aspect="AspectFill" Opacity="0.3"/>
+        <Image Source="{StaticResource MainBackgroundImage}"
+               Aspect="AspectFill"
+               Opacity="0.3"/>
 
         <BoxView Style="{StaticResource OverlayStyle}"/>
 
@@ -18,7 +18,7 @@
                    FontAttributes="Bold"/>
 
             <ListView x:Name="concertsListView"
-                      BackgroundColor="Transparent"
+                      BackgroundColor="{StaticResource TransparentBg}"
                       SeparatorColor="{DynamicResource PrimaryColor}"
                       ItemSelected="OnConcertSelected">
 
@@ -26,7 +26,7 @@
                     <DataTemplate>
                         <TextCell Text="{Binding NameConcert}"
                                   Detail="{Binding Date}"
-                                  TextColor="White"
+                                  TextColor="{StaticResource WhiteText}"
                                   DetailColor="{DynamicResource PrimaryColor}"/>
                     </DataTemplate>
                 </ListView.ItemTemplate>

@@ -1,24 +1,38 @@
-<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AppMovilesParcial1.Pages.DiscografiaPage"
-             Title="DiscografiaPage">
+             x:Class="AppMovilesParcial1.Pages.DiscografiaPage">
 
     <Grid>
 
-        <Image Source="miloj3.jpg" Aspect="AspectFill" Opacity="0.3"/>
+        <Image Source="{StaticResource MainBackgroundImage}"
+               Aspect="AspectFill"
+               Opacity="0.3"/>
+
         <BoxView Style="{StaticResource OverlayStyle}"/>
 
-        <ListView x:Name="albumsListView"
-                  ItemSelected="OnAlbumSelected">
+        <VerticalStackLayout Padding="20" Spacing="15">
 
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <TextCell Text="{Binding Name}"
-                              Detail="{Binding Year}"/>
-                </DataTemplate>
-            </ListView.ItemTemplate>
+            <Label Text="DISCOGRAFÍA"
+                   Style="{StaticResource MainTitleStyle}"
+                   FontFamily="SuperPopstar"
+                   FontAttributes="Bold"/>
 
-        </ListView>
+            <ListView x:Name="albumsListView"
+                      BackgroundColor="{StaticResource TransparentBg}"
+                      SeparatorColor="{DynamicResource PrimaryColor}"
+                      ItemSelected="OnAlbumSelected">
+
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding Name}"
+                                  Detail="{Binding Year}"
+                                  TextColor="{StaticResource WhiteText}"
+                                  DetailColor="{DynamicResource PrimaryColor}"/>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+
+            </ListView>
+
+        </VerticalStackLayout>
     </Grid>
 </ContentPage>

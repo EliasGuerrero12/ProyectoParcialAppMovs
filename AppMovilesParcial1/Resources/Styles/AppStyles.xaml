@@ -5,7 +5,7 @@
     <!-- ================= COLORES ================= -->
 
     <!-- dinámico (lo cambia el switch) -->
-    <Color x:Key="PrimaryColor">Yellow</Color>
+    <Color x:Key="PrimaryColor">DodgerBlue</Color>
 
     <Color x:Key="WhiteText">White</Color>
     <Color x:Key="GrayText">Gray</Color>
@@ -28,6 +28,14 @@
 
 
     <!-- ================= ESTILOS ================= -->
+    <Style x:Key="HeroTitleStyle" TargetType="Label">
+        <Setter Property="FontSize" Value="85"/>
+        <Setter Property="FontFamily" Value="SuperPopstar"/>
+        <Setter Property="FontAttributes" Value="Bold"/>
+        <Setter Property="HorizontalTextAlignment" Value="Center"/>
+        <Setter Property="VerticalOptions" Value="Center"/>
+        <Setter Property="TextColor" Value="{DynamicResource PrimaryColor}"/>
+    </Style>
 
     <Style x:Key="OverlayStyle" TargetType="BoxView">
         <Setter Property="Color" Value="{StaticResource OverlayBlack}" />
@@ -36,8 +44,9 @@
 
     <Style x:Key="MainTitleStyle" TargetType="Label">
         <Setter Property="FontSize" Value="{StaticResource TitleLarge}" />
-        <Setter Property="TextColor" Value="{StaticResource WhiteText}" />
+        <Setter Property="TextColor" Value="{DynamicResource PrimaryColor}" />
         <Setter Property="HorizontalTextAlignment" Value="Center" />
+        <Setter Property="FontAttributes" Value="Bold" />
     </Style>
 
     <Style x:Key="BoldTitleStyle" TargetType="Label">

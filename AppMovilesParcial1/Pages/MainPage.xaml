@@ -27,13 +27,8 @@
 
             <!-- ===== CONTENIDO CENTRAL ===== -->
             <Label Grid.Row="1"
-                   Text="MILO J"
-                   FontSize="85"
-                   FontFamily="SuperPopstar"
-                   TextColor="Beige"
-                   HorizontalOptions="Center"
-                   VerticalOptions="Center"
-                   FontAttributes="Bold"/>
+       Text="MILO J"
+       Style="{StaticResource HeroTitleStyle}"/>
 
         </Grid>
 

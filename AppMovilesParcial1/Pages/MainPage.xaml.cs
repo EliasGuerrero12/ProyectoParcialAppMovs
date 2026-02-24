@@ -21,10 +21,12 @@ public partial class MainPage : ContentPage
     {
         if (e.Value)
         {
-            Application.Current.Resources["PrimaryColor"] = Colors.Red;
+            Application.Current.Resources["PrimaryColor"] = Colors.DodgerBlue;
+            
+            
             return;
         }
 
-        Application.Current.Resources["PrimaryColor"] = Colors.Yellow;
+        Application.Current.Resources["PrimaryColor"] = Colors.White;
     }
 }
