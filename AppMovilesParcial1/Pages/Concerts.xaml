@@ -4,18 +4,18 @@
 
     <Grid>
 
-        <Image Source="{StaticResource MainBackgroundImage}"
-               Aspect="AspectFill"
-               Opacity="0.3"/>
+        <Image Source="{DynamicResource BackgroundImage}"
+       Aspect="AspectFill"
+       HorizontalOptions="Fill"
+       VerticalOptions="Fill" />
 
         <BoxView Style="{StaticResource OverlayStyle}"/>
 
         <VerticalStackLayout Padding="20" Spacing="15">
 
             <Label Text="CONCIERTOS Y GIRAS"
-                   Style="{StaticResource MainTitleStyle}"
-                   FontFamily="SuperPopstar"
-                   FontAttributes="Bold"/>
+       Style="{StaticResource MainTitleStyle}"
+       FontFamily="SuperPopstar"/>
 
             <ListView x:Name="concertsListView"
                       BackgroundColor="{StaticResource TransparentBg}"

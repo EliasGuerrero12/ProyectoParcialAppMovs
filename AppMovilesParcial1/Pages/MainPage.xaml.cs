@@ -17,16 +17,23 @@ public partial class MainPage : ContentPage
         await Navigation.PushAsync(new DiscografiaPage());
     }
 
-    private void OnColorChanged(object sender, ToggledEventArgs e)
+
+
+    private void OnThemeChanged(object sender, ToggledEventArgs e)
     {
         if (e.Value)
         {
+            // 🔵 MODO AZUL / CONCIERTOS
             Application.Current.Resources["PrimaryColor"] = Colors.DodgerBlue;
-            
-            
-            return;
+            Application.Current.Resources["TitleLarge"] = 60d;
+            Application.Current.Resources["BackgroundImage"] = "miloconce.jpg";
         }
-
-        Application.Current.Resources["PrimaryColor"] = Colors.White;
+        else
+        {
+            // ⚪ MODO CLARO / DISCOGRAFÍA
+            Application.Current.Resources["PrimaryColor"] = Colors.White;
+            Application.Current.Resources["TitleLarge"] = 40d;
+            Application.Current.Resources["BackgroundImage"] = "miloj3.jpg";
+        }
     }
 }

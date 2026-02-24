@@ -17,7 +17,7 @@
     <!-- ================= IMAGENES ================= -->
     <!-- esta imagen se repite mucho -->
     <x:String x:Key="MainBackgroundImage">miloj.jpg</x:String>
-
+    
 
     <!-- ================= TAMAÑOS ================= -->
 
@@ -35,6 +35,12 @@
         <Setter Property="HorizontalTextAlignment" Value="Center"/>
         <Setter Property="VerticalOptions" Value="Center"/>
         <Setter Property="TextColor" Value="{DynamicResource PrimaryColor}"/>
+    </Style>
+    <Style x:Key="ThemeSwitchStyle" TargetType="Switch">
+        <Setter Property="OnColor" Value="{DynamicResource PrimaryColor}"/>
+        <Setter Property="ThumbColor" Value="White"/>
+        <Setter Property="Scale" Value="1.2"/>
+        <Setter Property="HorizontalOptions" Value="End"/>
     </Style>
 
     <Style x:Key="OverlayStyle" TargetType="BoxView">

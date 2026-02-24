@@ -20,10 +20,8 @@
 
             <!-- ===== SWITCH (igual al PDF) ===== -->
             <Switch Grid.Row="0"
-        HorizontalOptions="End"
-        OnColor="{DynamicResource PrimaryColor}"
-        ThumbColor="{DynamicResource PrimaryColor}"
-        Toggled="OnColorChanged"/>
+        Style="{StaticResource ThemeSwitchStyle}"
+        Toggled="OnThemeChanged"/>
 
             <!-- ===== CONTENIDO CENTRAL ===== -->
             <Label Grid.Row="1"
