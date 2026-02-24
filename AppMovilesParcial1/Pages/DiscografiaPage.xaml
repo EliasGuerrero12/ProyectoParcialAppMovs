@@ -2,42 +2,23 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppMovilesParcial1.Pages.DiscografiaPage"
-             Title="Discografia">
+             Title="DiscografiaPage">
 
-    <!--diseño para mostrar la discografía de Milo J, con un fondo que combina una imagen para crear un efecto visual atractivo. El contenido principal se organiza en un ListView para mostrar los álbumes, con texto formateado para mejorar la presentación.-->
     <Grid>
-       
-        <Image Source="miloj3.jpg"
-               Aspect="AspectFill"
-               Opacity="0.3"/>
 
-        <VerticalStackLayout Padding="20" Spacing="15">
+        <Image Source="miloj3.jpg" Aspect="AspectFill" Opacity="0.3"/>
+        <BoxView Style="{StaticResource OverlayStyle}"/>
 
-           
-            <Label 
-                Text="DISCOGRAFIA"
-                HorizontalOptions="Center"
-                FontSize="50"
-                FontFamily="SuperPopstar"
-                FontAttributes="Bold"
-                TextColor="White"/>
+        <ListView x:Name="albumsListView"
+                  ItemSelected="OnAlbumSelected">
 
-            
-            <ListView x:Name="albumsListView"
-                      ItemSelected="OnAlbumSelected"
-                      BackgroundColor="Transparent"
-                      SeparatorColor="#941f1f">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding Name}"
+                              Detail="{Binding Year}"/>
+                </DataTemplate>
+            </ListView.ItemTemplate>
 
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <TextCell Text="{Binding Name}"
-                                  Detail="{Binding Year}"
-                                  TextColor="White"
-                                  DetailColor="#941f1f" />
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-
-            </ListView>
-        </VerticalStackLayout>
+        </ListView>
     </Grid>
 </ContentPage>

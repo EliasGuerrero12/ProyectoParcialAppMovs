@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <!-- ================= COLORES ================= -->
+
+    <!-- dinámico (lo cambia el switch) -->
+    <Color x:Key="PrimaryColor">Yellow</Color>
+
+    <Color x:Key="WhiteText">White</Color>
+    <Color x:Key="GrayText">Gray</Color>
+    <Color x:Key="PeachText">PeachPuff</Color>
+    <Color x:Key="OverlayBlack">Black</Color>
+    <Color x:Key="TransparentBg">Transparent</Color>
+
+
+    <!-- ================= IMAGENES ================= -->
+    <!-- esta imagen se repite mucho -->
+    <x:String x:Key="MainBackgroundImage">miloj.jpg</x:String>
+
+
+    <!-- ================= TAMAÑOS ================= -->
+
+    <x:Double x:Key="TitleLarge">50</x:Double>
+    <x:Double x:Key="TitleMedium">26</x:Double>
+    <x:Double x:Key="NormalText">18</x:Double>
+    <x:Double x:Key="SmallText">14</x:Double>
+
+
+    <!-- ================= ESTILOS ================= -->
+
+    <Style x:Key="OverlayStyle" TargetType="BoxView">
+        <Setter Property="Color" Value="{StaticResource OverlayBlack}" />
+        <Setter Property="Opacity" Value="0.3" />
+    </Style>
+
+    <Style x:Key="MainTitleStyle" TargetType="Label">
+        <Setter Property="FontSize" Value="{StaticResource TitleLarge}" />
+        <Setter Property="TextColor" Value="{StaticResource WhiteText}" />
+        <Setter Property="HorizontalTextAlignment" Value="Center" />
+    </Style>
+
+    <Style x:Key="BoldTitleStyle" TargetType="Label">
+        <Setter Property="FontSize" Value="{StaticResource TitleMedium}" />
+        <Setter Property="FontAttributes" Value="Bold" />
+        <Setter Property="TextColor" Value="{StaticResource WhiteText}" />
+        <Setter Property="HorizontalTextAlignment" Value="Center" />
+    </Style>
+
+    <!-- dinámico -->
+    <Style x:Key="AccentTextStyle" TargetType="Label">
+        <Setter Property="FontSize" Value="{StaticResource SmallText}" />
+        <Setter Property="TextColor" Value="{DynamicResource PrimaryColor}" />
+    </Style>
+
+    <Style x:Key="DescriptionStyle" TargetType="Label">
+        <Setter Property="FontSize" Value="15" />
+        <Setter Property="TextColor" Value="{StaticResource PeachText}" />
+        <Setter Property="HorizontalTextAlignment" Value="Center" />
+    </Style>
+
+</ResourceDictionary>

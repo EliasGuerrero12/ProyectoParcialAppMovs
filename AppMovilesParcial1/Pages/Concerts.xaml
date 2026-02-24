@@ -1,46 +1,33 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage
-    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    x:Class="AppMovilesParcial1.Pages.Concerts"
-    Title="Giras">
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppMovilesParcial1.Pages.Concerts"
+             Title="Giras">
 
-    <!--diseño para mostrar los conciertos de manera detallada con un fondo que combina una imagen y un BoxView para crear un efecto visual atractivo. 
-    utilizando listview para mostrar la lista de conciertos, con imágenes y texto formateado para mejorar la presentación.-->
     <Grid>
-          <Image Source="miloconce.jpg"
-               Aspect="AspectFill"
-               Opacity="0.3"/>
 
-      
-        <BoxView Color="Black" 
-                 Opacity="0.2"/>
+        <Image Source="miloconce.jpg" Aspect="AspectFill" Opacity="0.3"/>
+
+        <BoxView Style="{StaticResource OverlayStyle}"/>
 
         <VerticalStackLayout Padding="20" Spacing="15">
 
-         
-            <Label 
-                Text="CONCIERTOS Y GIRAS"
-                HorizontalOptions="Center"
-                FontSize="50"
-                FontFamily="SuperPopstar"
-                FontAttributes="Bold"
-                TextColor="White"
-                Margin="0,0,0,10"/>
+            <Label Text="CONCIERTOS Y GIRAS"
+                   Style="{StaticResource MainTitleStyle}"
+                   FontFamily="SuperPopstar"
+                   FontAttributes="Bold"/>
 
-           
             <ListView x:Name="concertsListView"
-                      ItemSelected="OnConcertSelected"
                       BackgroundColor="Transparent"
-                      SeparatorColor="#1E90FF">
+                      SeparatorColor="{DynamicResource PrimaryColor}"
+                      ItemSelected="OnConcertSelected">
 
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <TextCell 
-                            Text="{Binding NameConcert}"
-                            Detail="{Binding Date}"
-                            TextColor="White"
-                            DetailColor="#87CEEB" />
+                        <TextCell Text="{Binding NameConcert}"
+                                  Detail="{Binding Date}"
+                                  TextColor="White"
+                                  DetailColor="{DynamicResource PrimaryColor}"/>
                     </DataTemplate>
                 </ListView.ItemTemplate>
 
@@ -48,5 +35,4 @@
 
         </VerticalStackLayout>
     </Grid>
-
 </ContentPage>

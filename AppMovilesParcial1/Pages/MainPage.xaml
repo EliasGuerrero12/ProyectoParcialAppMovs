@@ -4,18 +4,38 @@
              x:Class="AppMovilesParcial1.Pages.MainPage"
              Shell.NavBarIsVisible="False">
 
-    <!--mainpage con un diseño sencillo pero impactante, utilizando una imagen de fondo que ocupa toda la pantalla y un título centrado con una fuente llamativa para destacar el nombre del artista. El diseño es minimalista, enfocándose en la imagen y el texto para crear una primera impresión fuerte y atractiva para los usuarios al ingresar a la aplicación.-->
+    <!-- mismo fondo -->
     <Grid>
-        <Image Source="miloj.jpg"
+
+        <Image Source="{StaticResource MainBackgroundImage}"
                Aspect="AspectFill" />
 
-        <Label Text="MILO J"
+        <!-- Grid interno como el PDF -->
+        <Grid Padding="20">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <!-- ===== SWITCH (igual al PDF) ===== -->
+            <Switch Grid.Row="0"
+        HorizontalOptions="End"
+        OnColor="{DynamicResource PrimaryColor}"
+        ThumbColor="{DynamicResource PrimaryColor}"
+        Toggled="OnColorChanged"/>
+
+            <!-- ===== CONTENIDO CENTRAL ===== -->
+            <Label Grid.Row="1"
+                   Text="MILO J"
                    FontSize="85"
                    FontFamily="SuperPopstar"
                    TextColor="Beige"
                    HorizontalOptions="Center"
                    VerticalOptions="Center"
                    FontAttributes="Bold"/>
-    </Grid>
 
+        </Grid>
+
+    </Grid>
 </ContentPage>
