@@ -22,7 +22,7 @@
     <x:Double x:Key="NormalText">18</x:Double>
     <x:Double x:Key="SmallText">14</x:Double>
 
-
+    
 
     <Style x:Key="HeroTitleStyle" TargetType="Label">
         <Setter Property="FontSize" Value="85"/>
