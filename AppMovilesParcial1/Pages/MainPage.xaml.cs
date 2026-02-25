@@ -23,14 +23,14 @@ public partial class MainPage : ContentPage
     {
         if (e.Value)
         {
-            // 🔵 MODO AZUL / CONCIERTOS
+            
             Application.Current.Resources["PrimaryColor"] = Colors.DodgerBlue;
             Application.Current.Resources["TitleLarge"] = 60d;
             Application.Current.Resources["BackgroundImage"] = "miloconce.jpg";
         }
         else
         {
-            // ⚪ MODO CLARO / DISCOGRAFÍA
+           
             Application.Current.Resources["PrimaryColor"] = Colors.White;
             Application.Current.Resources["TitleLarge"] = 40d;
             Application.Current.Resources["BackgroundImage"] = "miloj3.jpg";

@@ -4,13 +4,13 @@
              x:Class="AppMovilesParcial1.Pages.MainPage"
              Shell.NavBarIsVisible="False">
 
-    <!-- mismo fondo -->
+    
     <Grid>
 
         <Image Source="{StaticResource MainBackgroundImage}"
                Aspect="AspectFill" />
 
-        <!-- Grid interno como el PDF -->
+        
         <Grid Padding="20">
 
             <Grid.RowDefinitions>
@@ -18,12 +18,12 @@
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
 
-            <!-- ===== SWITCH (igual al PDF) ===== -->
+            
             <Switch Grid.Row="0"
         Style="{StaticResource ThemeSwitchStyle}"
         Toggled="OnThemeChanged"/>
 
-            <!-- ===== CONTENIDO CENTRAL ===== -->
+         
             <Label Grid.Row="1"
        Text="MILO J"
        Style="{StaticResource HeroTitleStyle}"/>

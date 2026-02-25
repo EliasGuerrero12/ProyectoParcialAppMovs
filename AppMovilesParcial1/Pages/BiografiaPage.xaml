@@ -6,7 +6,7 @@
 
     <Grid>
 
-        <!-- fondo reutilizado -->
+   
         <Image Source="{StaticResource MainBackgroundImage}"
                Aspect="AspectFill"
                Opacity="0.25"/>
@@ -16,13 +16,13 @@
         <ScrollView>
             <VerticalStackLayout Padding="20" Spacing="30">
 
-                <!-- TÍTULO -->
+                
                 <Label Text="Biografía"
                        Style="{StaticResource MainTitleStyle}"
                        FontFamily="SuperPopstar"/>
 
 
-                <!-- PRIMER BLOQUE -->
+                
                 <Grid ColumnDefinitions="100,*"
                       ColumnSpacing="40">
 
@@ -44,7 +44,7 @@ En 2021 conoció a su crew BajoWest, quienes impulsaron su carrera musical. En 2
                 </Grid>
 
 
-                <!-- SEGUNDO BLOQUE -->
+                
                 <Label FontSize="20"
                        TextColor="{StaticResource WhiteText}"
                        LineBreakMode="WordWrap"
@@ -53,7 +53,7 @@ En 2021 conoció a su crew BajoWest, quienes impulsaron su carrera musical. En 2
 En noviembre del mismo año, llegaron sus primeras colaboraciones con otros artistas. La más destacada fue “El Bolero”, junto a Yami Safdie, lanzada el 16 de noviembre, que alcanzó 15 millones de reproducciones en YouTube en tan solo ocho meses."/>
 
 
-                <!-- TERCER BLOQUE -->
+                
                 <Grid ColumnDefinitions="*,120"
                       ColumnSpacing="15">
 
