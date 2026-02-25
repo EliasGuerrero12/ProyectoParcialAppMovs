@@ -5,6 +5,7 @@ public partial class MainPage : ContentPage
     public MainPage()
     {
         InitializeComponent();
+       
     }
 
     private async void OnBiografiaClicked(object sender, EventArgs e)
@@ -19,21 +20,18 @@ public partial class MainPage : ContentPage
 
 
 
-    private void OnThemeChanged(object sender, ToggledEventArgs e)
+    
+
+    private void OnToggledChanged(object sender, ToggledEventArgs e)
     {
+       
         if (e.Value)
         {
-            
-            Application.Current.Resources["PrimaryColor"] = Colors.DodgerBlue;
-            Application.Current.Resources["TitleLarge"] = 60d;
-            Application.Current.Resources["BackgroundImage"] = "miloconce.jpg";
+            Application.Current.Resources["PrimaryColor"] = Colors.Red;
         }
         else
         {
-           
-            Application.Current.Resources["PrimaryColor"] = Colors.White;
-            Application.Current.Resources["TitleLarge"] = 40d;
-            Application.Current.Resources["BackgroundImage"] = "miloj3.jpg";
+            Application.Current.Resources["PrimaryColor"] = Color.FromHex("#00d2ff");
         }
     }
 }

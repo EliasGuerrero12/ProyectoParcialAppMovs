@@ -4,7 +4,8 @@
 
     <Grid>
 
-        <Image Source="{DynamicResource BackgroundImage}"
+        <Image Source="milocon.jpg"
+               Opacity="0.3"
        Aspect="AspectFill"
        HorizontalOptions="Fill"
        VerticalOptions="Fill" />
@@ -14,7 +15,7 @@
         <VerticalStackLayout Padding="20" Spacing="15">
 
             <Label Text="DISCOGRAFÍA"
-       Style="{StaticResource MainTitleStyle}"
+       Style="{DynamicResource MainTitleStyle}"
        FontFamily="SuperPopstar"/>
 
             <ListView x:Name="albumsListView"

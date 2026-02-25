@@ -7,7 +7,7 @@
     
     <Grid>
 
-        <Image Source="{StaticResource MainBackgroundImage}"
+        <Image Source="{DynamicResource MainBackgroundImage}"
                Aspect="AspectFill" />
 
         
@@ -18,12 +18,13 @@
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
 
-            
             <Switch Grid.Row="0"
-        Style="{StaticResource ThemeSwitchStyle}"
-        Toggled="OnThemeChanged"/>
+        HorizontalOptions="End"
+        OnColor="{DynamicResource PrimaryColor}"
+        Toggled="OnToggledChanged"
+        VerticalOptions="End"/>
 
-         
+
             <Label Grid.Row="1"
        Text="MILO J"
        Style="{StaticResource HeroTitleStyle}"/>
